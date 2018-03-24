@@ -1,3 +1,7 @@
-- clean: []
-- link: {}
-- shell: []
+- clean: ['~', '~/.config']
+- shell:
+    - mkdir -p ~/.config
+- link:
+    ~/.dotfiles:            ''
+    ~/.zgen:                zgen
+    ~/.zshrc:               zshrc
